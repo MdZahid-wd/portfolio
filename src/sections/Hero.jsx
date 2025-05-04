@@ -1,9 +1,9 @@
 import React from "react";
 import PROFILE_PIC from "../assets/images/profile.jpg";
-import ICON_1 from "../assets/images/c.png";
-import ICON_2 from "../assets/images/java.png";
-import ICON_3 from "../assets/images/icons8-java-94.png";
-import ICON_4 from "../assets/images/c.png";
+import ICON_1 from "../assets/images/mongodb.png";
+import ICON_2 from "../assets/images/express-js.png";
+import ICON_3 from "../assets/images/react-js.jpg";
+import ICON_4 from "../assets/images/node-js.png";
 import { STATS } from "../utils/data";
 import StatInfoCard from "../components/StatInfoCard";
 
@@ -46,7 +46,7 @@ const Hero = () => {
           <img
             src={ICON_1}
             alt="Icon 1"
-            className="icon-img -left-10 bottom-20 rotate-[1.75deg]"
+            className="icon-img -left-10 bottom-11 rotate-[1.75deg]"
           />
           <img
             src={ICON_2}
@@ -56,12 +56,12 @@ const Hero = () => {
           <img
             src={ICON_3}
             alt="Icon 3"
-            className="icon-img left-[110px] md:left-[150px] -bottom-6 rotate-[3.75deg]"
+            className="icon-img left-[110px] md:left-[150px] -bottom-9 rotate-[3.75deg]"
           />
           <img
             src={ICON_4}
             alt="Icon 4"
-            className="icon-img left-[200px] md:left-[225px] -bottom-9 md:-bottom-10 rotate-[4.75deg]"
+            className="icon-img left-[200px] md:left-[260px] -bottom-7 md:-bottom-6 rotate-[4.75deg]"
           />
         </div>
       </div>

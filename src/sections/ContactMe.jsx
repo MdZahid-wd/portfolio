@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { ABOUT_ME } from "../utils/data";
 import { IoMdMail } from "react-icons/io";
 import { IoPhonePortraitOutline } from "react-icons/io5";
@@ -6,6 +7,24 @@ import { MdOutlineWeb } from "react-icons/md";
 import ContactInfoCard from "../components/ContactInfoCard";
 
 const ContactMe = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_acxak5k", "template_e1kxsb8", form.current, {
+        publicKey: "GT0abJmK3q1rH1Lv8",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
   return (
     <section id="contact">
       <div className="container mx-auto p-10">
@@ -30,10 +49,10 @@ const ContactMe = () => {
             <h5 className="md:hidden text-secondary text-lg font-medium mt-4 pb-5">
               Contact Form
             </h5>
-            <form className="flex flex-col">
+            <form ref={form} onSubmit={sendEmail} className="flex flex-col">
               <input
                 type="text"
-                name="fullname"
+                name="user_name"
                 placeholder="Full Name"
                 id=""
                 className="input-box"
@@ -41,7 +60,7 @@ const ContactMe = () => {
               />
               <input
                 type="text"
-                name="email"
+                name="user_email"
                 placeholder="Email"
                 id=""
                 className="input-box"

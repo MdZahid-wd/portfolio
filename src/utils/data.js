@@ -24,11 +24,11 @@ import { MdGroups3 } from "react-icons/md";
 
 import PROJECT_IMG_1 from "../assets/images/chatApp.jpg";
 import PROJECT_IMG_2 from "../assets/images/TaskManager.jpg";
-import PROJECT_IMG_3 from "../assets/images/java.png";
-import PROJECT_IMG_4 from "../assets/images/mysql.png";
-import PROJECT_IMG_5 from "../assets/images/mongodb.png";
-import PROJECT_IMG_6 from "../assets/images/react-js.jpg";
-import PROJECT_IMG_7 from "../assets/images/css3.webp";
+// import PROJECT_IMG_3 from "";
+// import PROJECT_IMG_4 from "";
+// import PROJECT_IMG_5 from "";
+// import PROJECT_IMG_6 from "";
+// import PROJECT_IMG_7 from "";
 
 export const MENU_LINKS = [
   { id: "01", label: "Home", offset: -100, to: "hero" },
