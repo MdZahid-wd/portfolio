@@ -131,7 +131,7 @@ export const SKILLS = [
 
 export const ABOUT_ME = {
   content:
-    "i am a passionate frontend develover with a strong foundation in building respossive, user-f\nMy journey in web development started with a simple curiosity-how does the web work",
+    "i am a passionate frontend develover with a strong foundation in building respossive and user-centric\nMy journey in web development started with a simple curiosity-how does the web work",
   socialLinks: [
     { id: "01", label: "Facebook", icon: FaFaceFlushed, Link: "#" },
     { id: "02", label: "Instagram", icon: FaInstagram, Link: "#" },
